@@ -18,7 +18,7 @@ There are 13 bar charts available for instatnt visualization: 1. Precipitation, 
 
 Script is started by running weather_analysis.py. Data for analysis is then manually inserted.
 Init_analysis.py initializes data for analysis. Here we use Croatian 14 main weather stations.
-Fethers get average data for each of the listed categories. That data is fetched from DHMZ official site and stored in lists.
+Fethers.py get average data for each of the listed categories. That data is fetched from DHMZ official site and stored in lists.
 Ogimet_fetchers.py does most of the job fetching data from Ogimet and putting it in pandas dataframes and lists.
 Plotting_data.py plots your data on bar charts.
 
