@@ -24,7 +24,7 @@ Plotting_data.py plots your data on bar charts.
 
 The more data or longer period, the more you wait for fetchers to get it. Usually it shouldn't take it more than 2 minutes, even for longer/bigger amounts of data analysed. 
 
-It's possible to alter Init_analysis to get the data from stations you want, but after that you should also probably alter some other things, since some date is fetched with average data from DHMZ witch is later used from visualizations. But general way of fetching and visualizing Ogimet data is provided so you can build your own script if needed. 
+It's possible to alter Init_analysis to get the data from stations you want, but after that you should also probably alter some other things, since some data is fetched with average data from DHMZ witch is later used from visualizations. But general way of fetching and visualizing Ogimet data is provided so you can build your own script if needed. 
 
 Dont' overuse and abuse. Enjoy! :)
 
