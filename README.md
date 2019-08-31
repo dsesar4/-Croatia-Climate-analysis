@@ -16,7 +16,7 @@ The difference is that country data isn't available chronologically since it wou
 
 There are 13 bar charts available for instatnt visualization: 1. Precipitation, 2. Maximum temperature, 3. Minimum temperature, 4. Humidity, 5. Days with snow cover, 6. Maximum snow depth, 7. Cumulative snow cover, 8. Number of days with Tmin<-10°C, 9. Number of days with Tmax<0°C, 10. Number of days with Tmin<0°C, 11. Number of days with Tmax>25°C, 12. Number of days with Tmax>30°C, 13. Number of days with Tmin>20°C.
 
-Script is started by running weather_analysis.py. Data for analysis is then manually inserted.
+Script is started by running weather_analysis.py. Parameters for analysis are then manually inserted.
 Init_analysis.py initializes data for analysis. Here we use Croatian 14 main weather stations.
 Fethers.py get average data for each of the listed categories. That data is fetched from DHMZ official site and stored in lists.
 Ogimet_fetchers.py does most of the job fetching data from Ogimet and putting it in pandas dataframes and lists.
