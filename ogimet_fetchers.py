@@ -26,7 +26,7 @@ def stats_ogimet_monthly(year, month, stations):
     
     for i in range(len(stations)):
         url = 'https://www.ogimet.com/cgi-bin/gsynres?lang=en&ind={station}&ndays'\
-        '={num_of_days}&ano={year}&mes={month}&day={day}&hora=18&ord=REV&Send=Send'\
+        '={num_of_days}&ano={year}&mes={month}&day={day}&hora=20&ord=REV&Send=Send'\
         .format(year = date.year, month = date.month, day = num_of_days, \
                 num_of_days = num_of_days, station = stations[i])
         dfs = pd.read_html(url, match="Daily summary")
@@ -95,7 +95,7 @@ def stats_ogimet_seasonal(year, season_months, stations):
         
         for j in range(len(stations)):
             url = 'https://www.ogimet.com/cgi-bin/gsynres?lang=en&ind={station}&ndays'\
-            '={num_of_days}&ano={year}&mes={month}&day={day}&hora=18&ord=REV&Send=Send'\
+            '={num_of_days}&ano={year}&mes={month}&day={day}&hora=20&ord=REV&Send=Send'\
             .format(year = date.year, month = date.month, day = num_of_days, \
                     num_of_days = num_of_days, station = stations[j])
             dfs = pd.read_html(url, match="Daily summary")
@@ -160,7 +160,7 @@ def stats_ogimet_monthly_yearly(years, month, stations):
         date = start_date    
 
         url = 'https://www.ogimet.com/cgi-bin/gsynres?lang=en&ind={station}&ndays'\
-        '={num_of_days}&ano={year}&mes={month}&day={day}&hora=18&ord=REV&Send=Send'\
+        '={num_of_days}&ano={year}&mes={month}&day={day}&hora=20&ord=REV&Send=Send'\
         .format(year = date.year, month = date.month, day = num_of_days, \
                 num_of_days = num_of_days, station = stations[0])
         dfs = pd.read_html(url, match="Daily summary")
@@ -230,7 +230,7 @@ def stats_ogimet_seasonal_yearly(years, season_months, stations):
             date = start_date            
             
             url = 'https://www.ogimet.com/cgi-bin/gsynres?lang=en&ind={station}&ndays'\
-            '={num_of_days}&ano={year}&mes={month}&day={day}&hora=18&ord=REV&Send=Send'\
+            '={num_of_days}&ano={year}&mes={month}&day={day}&hora=20&ord=REV&Send=Send'\
             .format(year = date.year, month = date.month, day = num_of_days, \
                     num_of_days = num_of_days, station = stations[0])
             dfs = pd.read_html(url, match="Daily summary")
